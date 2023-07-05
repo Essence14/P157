@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virtual Posters</title>
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  <script src="Poster.js"></script>
+</head>
+<body>
+  <a-scene id="scene">
+    <!-- Camera -->
+    <a-entity id="cameraRig" position="0 1.6 0">
+      <a-camera id="camera" wasd-controls-enabled="false"></a-camera>
+    </a-entity>
+
+    <!-- Title and Subtitle -->
+    <a-entity id="title" text="value: Virtual Comics World; align: center; width: 6;"></a-entity>
+    <a-entity id="subtitle" text="value: Explore DC & Marvel Comics; align: center; width: 4;"></a-entity>
+
+    <!-- Comic Container -->
+    <a-entity id="comic-container"></a-entity>
+  </a-scene>
+</body>
+</html>
